@@ -1,0 +1,89 @@
+.minha-classe {/*index*/
+    background-color:rgb(255, 255, 255);
+    
+}
+
+nav.navbar{
+    background-color:#333 !important;
+}
+.link-color{
+    color:blue;
+}
+
+.global-sales{
+    background-color: green;
+}
+
+.year_sales{
+    background-color: aqua;
+}
+
+.genre_sales{
+    background-color: lightgreen;
+}
+
+.compare_games{
+    background-color: yellowgreen;
+}
+
+.search_games{
+    background-color: rgb(24, 128, 163);
+}
+
+.lista{
+    background-color:rgb(255, 255, 255);
+}
+
+.sombra{
+    margin-top: 20px;
+}
+
+.lista:hover {
+    background-color: #c4c4c4;
+    transition: 0.2s;
+}
+
+.botão{
+    background-color: #0D6EFD;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.input{
+   border-radius: 5px; 
+   cursor: pointer; 
+}
+
+.input:hover{
+    border-color: #0D6EFD;
+}
+
+.input-text{
+    border-radius: 5px; 
+   cursor: pointer;
+   width: 30vh;
+   margin-right: 5px;
+}
+
+.input-text:hover{
+    border-color: #0D6EFD;
+    
+}
+
+.expaço{
+    margin-top: 20px;
+}
+
+.names{
+    font-style:oblique;
+    
+}
+
+.title{
+    color: #333;
+    background-color: rgb(153, 153, 153);
+    text-align: center;
+}

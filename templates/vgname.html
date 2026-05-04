@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content%}
+        <form class="d-flex" role="search" method="POST">
+            <input  name="name" type="search" class="input-text" autocomplete="off" placeholder="Search for games" />
+            <button class="btn btn-outline-success botão" type="submit">Search</button>
+        </form>
+        <div class="card shadow-sm sombra">
+            <div class="list-group list-group-flush">
+                {% for i in procura %}
+                <div class="list-group-item d-flex justify-content-between align-items-center lista">
+                    <span>{{i[0]}}</span>
+                    <span>{{i[1]}}</span>
+                    <span>{{i[2]}}</span>
+                    <span>{{i[3]}}</span>
+                    <span>{{i[4]}}</span>
+                    <span class="badge bg-primary rounded-pill">
+                        {{ i[5] }} milhões
+                    </span>
+                    
+                
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+
+
+        {% if erro %}
+            <p style="color: red;">{{ erro }}</p>
+        {% endif %}
+         
+{% endblock %}
+

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Genre sales</h2>
+    <ul>
+    {% for i in generos_total %}
+        <li class="names">
+            {{i}}
+        </li>
+    {% endfor %}
+    </ul>
+    <row class="fundo">
+        <form method="POST">
+            <input type="text" list="generos" class="input-text"name="genero" placeholder="Genero" autocomplete="off">
+            <datalist id="generos">
+                {% for i in generos_total%}
+                    <option value="{{i}}">
+                {% endfor %}
+            </datalist>
+            <input type="number" name="quantidade" class="input" placeholder="Selecione a quantidade desejada" autocomplete="off">
+
+            <button type="submit" class="botão">Lets see</button>
+        </form>
+
+            {% for i in jogos_genre %}
+            <p>
+                {{i[0]}}-- {{i[1]}} {{"milhoes de copias"}}
+                
+            </p>
+            {% endfor %}
+            {% if erro %}
+                <p style="color: red;">{{ erro }}</p>
+            {% endif %}
+    </row>
+{% endblock %}
